@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<Profiles>
+  <ProfTable>
+    <id>1</id>
+    <Name>???????????</Name>
+    <Prav>9</Prav>
+    <Mist>7</Mist>
+  </ProfTable>
+  <ProfTable>
+    <id>2</id>
+    <Name>?????? ??????? </Name>
+    <Prav>2</Prav>
+    <Mist>0</Mist>
+  </ProfTable>
+  <ProfTable>
+    <id>3</id>
+    <Name>????????? ?????? </Name>
+    <Prav>1</Prav>
+    <Mist>3</Mist>
+  </ProfTable>
+  <ProfTable>
+    <id>5</id>
+    <Name>???????? ???????? </Name>
+    <Prav>0</Prav>
+    <Mist>1</Mist>
+  </ProfTable>
+  <ProfTable>
+    <id>5</id>
+    <Name>???????? ????</Name>
+    <Prav>9</Prav>
+    <Mist>7</Mist>
+  </ProfTable>
+  <ProfTable>
+    <id>6</id>
+    <Name>?????????? ????</Name>
+    <Prav>1</Prav>
+    <Mist>0</Mist>
+  </ProfTable>
+  <ProfTable>
+    <id>7</id>
+    <Name>????????? ??????</Name>
+    <Prav>7</Prav>
+    <Mist>0</Mist>
+  </ProfTable>
+  <ProfTable>
+    <id>8</id>
+    <Name>Григорьев Артем</Name>
+    <Prav>3</Prav>
+    <Mist>1</Mist>
+  </ProfTable>
+</Profiles>

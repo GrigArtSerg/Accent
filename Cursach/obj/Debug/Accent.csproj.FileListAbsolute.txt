@@ -1,0 +1,16 @@
+F:\Programming\Cursach\Cursach\bin\Debug\Cursach.exe.config
+F:\Programming\Cursach\Cursach\bin\Debug\Cursach.exe
+F:\Programming\Cursach\Cursach\bin\Debug\Cursach.pdb
+F:\Programming\Cursach\Cursach\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+F:\Programming\Cursach\Cursach\obj\Debug\Accent.csproj.AssemblyReference.cache
+F:\Programming\Cursach\Cursach\obj\Debug\Accent.Form1.resources
+F:\Programming\Cursach\Cursach\obj\Debug\Accent.Form2.resources
+F:\Programming\Cursach\Cursach\obj\Debug\Accent.Form3.resources
+F:\Programming\Cursach\Cursach\obj\Debug\Cursach.Properties.Resources.resources
+F:\Programming\Cursach\Cursach\obj\Debug\Accent.Stats.resources
+F:\Programming\Cursach\Cursach\obj\Debug\Accent.List.resources
+F:\Programming\Cursach\Cursach\obj\Debug\Accent.csproj.GenerateResource.cache
+F:\Programming\Cursach\Cursach\obj\Debug\Accent.csproj.CoreCompileInputs.cache
+F:\Programming\Cursach\Cursach\obj\Debug\Accent.csproj.CopyComplete
+F:\Programming\Cursach\Cursach\obj\Debug\Cursach.exe
+F:\Programming\Cursach\Cursach\obj\Debug\Cursach.pdb

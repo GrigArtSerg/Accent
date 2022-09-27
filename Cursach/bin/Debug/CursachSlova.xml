@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<Dictionary>
+  <DicTable>
+    <id />
+    <word />
+    <accent />
+  </DicTable>
+  <DicTable>
+    <id>0</id>
+    <word>Слово</word>
+    <accent>Ударный слог</accent>
+  </DicTable>
+</Dictionary>

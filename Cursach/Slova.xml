@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+<Dictionary>
+  <DicTable>
+    <id>1</id>
+    <word>Апрель</word>
+    <accent>2</accent>
+  </DicTable>
+  <DicTable>
+    <id>2</id>
+    <word>Красота</word>
+    <accent>3</accent>
+  </DicTable>
+  <DicTable>
+    <id>3</id>
+    <word>Спокойствие</word>
+    <accent>2</accent>
+  </DicTable>
+ 
+</Dictionary>

@@ -1,0 +1,48 @@
+E:\Artem\Программирование\Cursach\Cursach\bin\Debug\Cursach.exe.config
+E:\Artem\Программирование\Cursach\Cursach\bin\Debug\Cursach.exe
+E:\Artem\Программирование\Cursach\Cursach\bin\Debug\Cursach.pdb
+E:\Artem\Программирование\Cursach\Cursach\obj\Debug\Cursach.csprojResolveAssemblyReference.cache
+E:\Artem\Программирование\Cursach\Cursach\obj\Debug\Cursach.Properties.Resources.resources
+E:\Artem\Программирование\Cursach\Cursach\obj\Debug\Cursach.csproj.GenerateResource.Cache
+E:\Artem\Программирование\Cursach\Cursach\obj\Debug\Cursach.exe
+E:\Artem\Программирование\Cursach\Cursach\obj\Debug\Cursach.pdb
+E:\Artem\Программирование\Cursach\Cursach\obj\Debug\Cursach.Form1.resources
+C:\Users\arina\Downloads\Cursach\Cursach\bin\Debug\Cursach.exe.config
+C:\Users\arina\Downloads\Cursach\Cursach\bin\Debug\Cursach.exe
+C:\Users\arina\Downloads\Cursach\Cursach\bin\Debug\Cursach.pdb
+C:\Users\arina\Downloads\Cursach\Cursach\obj\Debug\Cursach.csprojAssemblyReference.cache
+C:\Users\arina\Downloads\Cursach\Cursach\obj\Debug\Cursach.Form1.resources
+C:\Users\arina\Downloads\Cursach\Cursach\obj\Debug\Cursach.Properties.Resources.resources
+C:\Users\arina\Downloads\Cursach\Cursach\obj\Debug\Cursach.csproj.GenerateResource.cache
+C:\Users\arina\Downloads\Cursach\Cursach\obj\Debug\Cursach.csproj.CoreCompileInputs.cache
+C:\Users\arina\Downloads\Cursach\Cursach\obj\Debug\Cursach.exe
+C:\Users\arina\Downloads\Cursach\Cursach\obj\Debug\Cursach.pdb
+C:\Users\arina\Downloads\Cursach\Cursach\obj\Debug\Cursach.List.resources
+E:\Cursach\Cursach\bin\Debug\Cursach.exe.config
+E:\Cursach\Cursach\obj\Debug\Cursach.exe
+E:\Cursach\Cursach\obj\Debug\Cursach.pdb
+E:\Cursach\Cursach\obj\Debug\Cursach.Form1.resources
+E:\Cursach\Cursach\obj\Debug\Cursach.List.resources
+E:\Cursach\Cursach\obj\Debug\Cursach.Properties.Resources.resources
+E:\Cursach\Cursach\obj\Debug\Cursach.csproj.GenerateResource.Cache
+E:\Cursach\Cursach\bin\Debug\Cursach.exe
+E:\Cursach\Cursach\bin\Debug\Cursach.pdb
+E:\Cursach\Cursach\obj\Debug\Cursach.Form2.resources
+E:\Cursach\Cursach\obj\Debug\Cursach.Form3.resources
+E:\Cursach\Cursach\obj\Debug\Cursach.csprojResolveAssemblyReference.cache
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\bin\Debug\Cursach.exe.config
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\bin\Debug\Cursach.exe
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\bin\Debug\Cursach.pdb
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.csprojAssemblyReference.cache
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.Form1.resources
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.Form2.resources
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.Stats.resources
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.List.resources
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.Properties.Resources.resources
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.csproj.GenerateResource.cache
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.csproj.CoreCompileInputs.cache
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.csproj.CopyComplete
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.exe
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.pdb
+C:\Users\arina\OneDrive\Рабочий стол\Cursach\Cursach\obj\Debug\Cursach.Form3.resources
