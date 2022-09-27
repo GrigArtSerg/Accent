@@ -22,13 +22,6 @@ namespace Accent
             LoadProfTable();
         }
 
-        private void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-      
-
-        }
-
-
         private void LoadProfTable()
         {
             XmlDocument doc = new XmlDocument();
