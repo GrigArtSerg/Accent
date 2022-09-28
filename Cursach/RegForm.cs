@@ -12,7 +12,7 @@ using System.Xml;
 
 namespace Accent
 {
-    public partial class Form2 : Form
+    public partial class RegForm : Form
     {
         private string myDirectory = Directory.GetCurrentDirectory();
         private XmlDocument MyDoc = null;
@@ -21,7 +21,8 @@ namespace Accent
 
         bool N = false;
         public int idnow = 1;
-        public Form2()
+
+        public RegForm()
         {
             InitializeComponent();
             
@@ -38,7 +39,7 @@ namespace Accent
         }
         private void Button1_Click(object sender, EventArgs e)
         {
-            string s = MaxID();
+            string s = Staff.MaxID("profiles.xml");
             XmlDocument doc = new XmlDocument();
             doc.Load(myDirectory + @"\profiles.xml");
             
@@ -51,7 +52,6 @@ namespace Accent
                     N = true;
                     idnow = int.Parse(node["id"].InnerText);
                 }
-
             }
 
             if (N == false)
@@ -89,36 +89,6 @@ namespace Accent
             }
             
             this.Close();
-        }
-
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        public string MaxID()
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load(myDirectory + @"\profiles.xml");
-            int p = 0;
-
-            foreach (XmlNode node in doc.DocumentElement)
-            {
-                int id = int.Parse(node["id"].InnerText);
-
-                if (id > p)
-                {
-                    p = id;
-                }
-            }
-
-            return Convert.ToString(p);
         }
     }
 }

@@ -16,16 +16,18 @@ namespace Accent
     public partial class Form1 : Form
     {
         private string myDirectory = Directory.GetCurrentDirectory();
+        /// <summary>
+        /// xml-файл
+        /// </summary>
         private XmlDocument MyDoc = null;
    
-        DataTable DicTable = null;
+        DataTable DicTable;
         DataSet Dictionary = null;
-        DataTable ProfTable = null;
+        DataTable ProfTable;
         DataSet Profiles = null;
 
         int countUnCor = 0, countCor = 0, ID = 1, accent = 0;
         string word;
-        string s;
         bool F = false;
         bool Prover = false;
 
@@ -75,8 +77,7 @@ namespace Accent
                 return;
             }
 
-            string s = MaxID();
-
+            string s = Staff.MaxID("Slova.xml");
 
             StringBuilder MyStringBuilder = new StringBuilder();
             int i = int.Parse(s) + 1;
@@ -90,8 +91,8 @@ namespace Accent
             Dictionary.Tables[0].Rows.Add(datarow);
             
            if (i == 1)
-            {
-                Dictionary.Tables[0].DefaultView.AllowDelete = true;
+           {
+               Dictionary.Tables[0].DefaultView.AllowDelete = true;
                Dictionary.Tables[0].DefaultView.Delete(0);
            }
             NewAccent.Text = "";
@@ -216,14 +217,14 @@ namespace Accent
         /// <param name="e"></param>
         private void Registration_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.ShowDialog();
+            RegForm RegForm = new RegForm();
+            RegForm.ShowDialog();
             Answer.Text = "Начать";
             F = false;
             label6.Text = "__?_?";
             QWord.Text = "слово";
             Prover = true;
-            this.ID = form2.idnow;
+            this.ID = RegForm.idnow;
         }
 
         /// <summary>
@@ -266,29 +267,12 @@ namespace Accent
         }
         #endregion Buttons
 
-        public string MaxID()
-        {
-            XmlDocument doc = new XmlDocument();
-            doc.Load(myDirectory + @"\Slova.xml");
-            int p = 0;
-
-            foreach (XmlNode node in doc.DocumentElement)
-            {
-                int id = int.Parse(node["id"].InnerText);
-                
-                if (id > p)
-                {
-                    p = id;
-                }
-            }
-
-            return Convert.ToString(p);
-        }
+        
 
         public void Choise()
         {
             Random r = new Random();
-            int n = r.Next(1, Convert.ToInt16(MaxID()));
+            int n = r.Next(1, Convert.ToInt16(Staff.MaxID("Slova.xml")));
 
             XmlDocument doc = new XmlDocument();
             doc.Load(myDirectory + @"\Slova.xml");

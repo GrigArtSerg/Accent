@@ -20,7 +20,6 @@ F:\Programming\Accent\Cursach\bin\Debug\Cursach.pdb
 F:\Programming\Accent\Cursach\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
 F:\Programming\Accent\Cursach\obj\Debug\Accent.csproj.AssemblyReference.cache
 F:\Programming\Accent\Cursach\obj\Debug\Accent.Form1.resources
-F:\Programming\Accent\Cursach\obj\Debug\Accent.Form2.resources
 F:\Programming\Accent\Cursach\obj\Debug\Accent.Form3.resources
 F:\Programming\Accent\Cursach\obj\Debug\Cursach.Properties.Resources.resources
 F:\Programming\Accent\Cursach\obj\Debug\Accent.Stats.resources
@@ -30,3 +29,4 @@ F:\Programming\Accent\Cursach\obj\Debug\Accent.csproj.CoreCompileInputs.cache
 F:\Programming\Accent\Cursach\obj\Debug\Accent.csproj.CopyComplete
 F:\Programming\Accent\Cursach\obj\Debug\Cursach.exe
 F:\Programming\Accent\Cursach\obj\Debug\Cursach.pdb
+F:\Programming\Accent\Cursach\obj\Debug\Accent.RegForm.resources

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="windows-1251" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Profiles>
   <ProfTable>
     <id>8</id>
     <Name>Григорьев Артем</Name>
-    <Prav>6</Prav>
-    <Mist>6</Mist>
+    <Prav>0</Prav>
+    <Mist>0</Mist>
   </ProfTable>
 </Profiles>
