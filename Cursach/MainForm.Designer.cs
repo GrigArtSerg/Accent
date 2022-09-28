@@ -33,7 +33,7 @@
             this.QWord = new System.Windows.Forms.Label();
             this.AccentAns = new System.Windows.Forms.NumericUpDown();
             this.Add = new System.Windows.Forms.Button();
-            this.NeWord = new System.Windows.Forms.TextBox();
+            this.NewWord = new System.Windows.Forms.TextBox();
             this.NewAccent = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Answer = new System.Windows.Forms.Button();
@@ -41,16 +41,16 @@
             this.enter = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.EndTraining = new System.Windows.Forms.Button();
+            this.ShowWordList = new System.Windows.Forms.Button();
+            this.AnsShow = new System.Windows.Forms.Button();
             this.AnsText = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Reset = new System.Windows.Forms.Button();
+            this.ShowStat = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Registration = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.AccentAns)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +63,6 @@
             this.label.Size = new System.Drawing.Size(281, 46);
             this.label.TabIndex = 0;
             this.label.Text = "Ударения 1.0";
-            this.label.Click += new System.EventHandler(this.label1_Click);
             // 
             // QWord
             // 
@@ -75,7 +74,6 @@
             this.QWord.TabIndex = 1;
             this.QWord.Text = "слово";
             this.QWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.QWord.Click += new System.EventHandler(this.QWord_Click);
             // 
             // AccentAns
             // 
@@ -85,7 +83,6 @@
             this.AccentAns.Name = "AccentAns";
             this.AccentAns.Size = new System.Drawing.Size(171, 23);
             this.AccentAns.TabIndex = 9;
-            this.AccentAns.ValueChanged += new System.EventHandler(this.AccentAns_ValueChanged);
             // 
             // Add
             // 
@@ -98,15 +95,14 @@
             this.Add.UseVisualStyleBackColor = true;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
-            // NeWord
+            // NewWord
             // 
-            this.NeWord.BackColor = System.Drawing.Color.White;
-            this.NeWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NeWord.Location = new System.Drawing.Point(47, 327);
-            this.NeWord.Name = "NeWord";
-            this.NeWord.Size = new System.Drawing.Size(171, 26);
-            this.NeWord.TabIndex = 1;
-            this.NeWord.TextChanged += new System.EventHandler(this.NeWord_TextChanged);
+            this.NewWord.BackColor = System.Drawing.Color.White;
+            this.NewWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewWord.Location = new System.Drawing.Point(47, 327);
+            this.NewWord.Name = "NewWord";
+            this.NewWord.Size = new System.Drawing.Size(171, 26);
+            this.NewWord.TabIndex = 1;
             // 
             // NewAccent
             // 
@@ -116,7 +112,6 @@
             this.NewAccent.Name = "NewAccent";
             this.NewAccent.Size = new System.Drawing.Size(135, 26);
             this.NewAccent.TabIndex = 2;
-            this.NewAccent.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.NewAccent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label2
@@ -167,7 +162,6 @@
             this.label1.Size = new System.Drawing.Size(91, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "Напишите слово";
-            this.label1.Click += new System.EventHandler(this.Label1_Click_2);
             // 
             // label3
             // 
@@ -178,38 +172,38 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Напишите номер ударения";
             // 
-            // button1
+            // EndTraining
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(137, 594);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(232, 36);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Закончить тренировку";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.EndTraining.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EndTraining.Location = new System.Drawing.Point(137, 594);
+            this.EndTraining.Name = "EndTraining";
+            this.EndTraining.Size = new System.Drawing.Size(232, 36);
+            this.EndTraining.TabIndex = 8;
+            this.EndTraining.Text = "Закончить тренировку";
+            this.EndTraining.UseVisualStyleBackColor = true;
+            this.EndTraining.Click += new System.EventHandler(this.EndTraining_Click);
             // 
-            // button2
+            // ShowWordList
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(137, 552);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(232, 36);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Открыть список слов";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.ShowWordList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ShowWordList.Location = new System.Drawing.Point(137, 552);
+            this.ShowWordList.Name = "ShowWordList";
+            this.ShowWordList.Size = new System.Drawing.Size(232, 36);
+            this.ShowWordList.TabIndex = 7;
+            this.ShowWordList.Text = "Открыть список слов";
+            this.ShowWordList.UseVisualStyleBackColor = true;
+            this.ShowWordList.Click += new System.EventHandler(this.ShowWordList_Click);
             // 
-            // button3
+            // AnsShow
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(300, 184);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 28);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Показать ответ";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.AnsShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AnsShow.Location = new System.Drawing.Point(300, 184);
+            this.AnsShow.Name = "AnsShow";
+            this.AnsShow.Size = new System.Drawing.Size(135, 28);
+            this.AnsShow.TabIndex = 11;
+            this.AnsShow.Text = "Показать ответ";
+            this.AnsShow.UseVisualStyleBackColor = true;
+            this.AnsShow.Click += new System.EventHandler(this.AnsShow_Click);
             // 
             // AnsText
             // 
@@ -229,29 +223,28 @@
             this.label6.TabIndex = 20;
             this.label6.Text = "__?_?";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
-            // button6
+            // Reset
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.Location = new System.Drawing.Point(137, 469);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(232, 36);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Очистить результаты";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
+            this.Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Reset.Location = new System.Drawing.Point(137, 469);
+            this.Reset.Name = "Reset";
+            this.Reset.Size = new System.Drawing.Size(232, 36);
+            this.Reset.TabIndex = 5;
+            this.Reset.Text = "Очистить результаты";
+            this.Reset.UseVisualStyleBackColor = true;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
-            // button5
+            // ShowStat
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(137, 511);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(232, 36);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Посмотреть статистику";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            this.ShowStat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ShowStat.Location = new System.Drawing.Point(137, 511);
+            this.ShowStat.Name = "ShowStat";
+            this.ShowStat.Size = new System.Drawing.Size(232, 36);
+            this.ShowStat.TabIndex = 6;
+            this.ShowStat.Text = "Показать статистику";
+            this.ShowStat.UseVisualStyleBackColor = true;
+            this.ShowStat.Click += new System.EventHandler(this.ShowStat_Click);
             // 
             // label5
             // 
@@ -275,32 +268,32 @@
             this.label4.Text = "clean";
             this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
-            // button4
+            // Registration
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(137, 427);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(232, 36);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Мои данные";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            this.Registration.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Registration.Location = new System.Drawing.Point(137, 427);
+            this.Registration.Name = "Registration";
+            this.Registration.Size = new System.Drawing.Size(232, 36);
+            this.Registration.TabIndex = 4;
+            this.Registration.Text = "Зарегистрироваться";
+            this.Registration.UseVisualStyleBackColor = true;
+            this.Registration.Click += new System.EventHandler(this.Registration_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 641);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.Reset);
+            this.Controls.Add(this.ShowStat);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.Registration);
             this.Controls.Add(this.AnsText);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AnsShow);
+            this.Controls.Add(this.ShowWordList);
+            this.Controls.Add(this.EndTraining);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.enter);
@@ -308,7 +301,7 @@
             this.Controls.Add(this.Answer);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.NewAccent);
-            this.Controls.Add(this.NeWord);
+            this.Controls.Add(this.NewWord);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.AccentAns);
             this.Controls.Add(this.QWord);
@@ -331,7 +324,7 @@
         private System.Windows.Forms.Label QWord;
         private System.Windows.Forms.NumericUpDown AccentAns;
         private System.Windows.Forms.Button Add;
-        private System.Windows.Forms.TextBox NeWord;
+        private System.Windows.Forms.TextBox NewWord;
         private System.Windows.Forms.TextBox NewAccent;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Answer;
@@ -339,16 +332,16 @@
         private System.Windows.Forms.Label enter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button EndTraining;
+        private System.Windows.Forms.Button ShowWordList;
+        private System.Windows.Forms.Button AnsShow;
         private System.Windows.Forms.Label AnsText;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Registration;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button ShowStat;
+        private System.Windows.Forms.Button Reset;
     }
 }
 
