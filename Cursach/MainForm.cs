@@ -50,16 +50,23 @@ namespace Accent
             }
         }
 
+        #region Buttons
+        /// <summary>
+        /// Кнопка "Добавить"
+        /// Добаляет слово из NewWord и NewAccent в xml
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Add_Click(object sender, EventArgs e)
         {
-            if (NeWord.Text == "")
+            if (NewWord.Text == "")
             {
                 if (NewAccent.Text == "")
                 {
                     enter.Text = "Вы ничего не ввели";
                     return;
                 }
-                enter.Text = "Вы не ввели cлово";
+                enter.Text = "Вы не ввели cлово"; 
                 return;
             }
             if (NewAccent.Text == "")
@@ -70,9 +77,10 @@ namespace Accent
 
             string s = MaxID();
 
+
             StringBuilder MyStringBuilder = new StringBuilder();
             int i = int.Parse(s) + 1;
-            string conv = NeWord.Text.ToLower();
+            string conv = NewWord.Text.ToLower();
             DataRow datarow = Dictionary.Tables[0].NewRow();
 
             datarow[0] = Convert.ToString(i);
@@ -87,7 +95,7 @@ namespace Accent
                Dictionary.Tables[0].DefaultView.Delete(0);
            }
             NewAccent.Text = "";
-            NeWord.Text = "";
+            NewWord.Text = "";
 
 
             MyDoc = new XmlDocument();
@@ -101,6 +109,12 @@ namespace Accent
             DicTable = Dictionary.Tables[0];
         }
 
+        /// <summary>
+        /// Кнопка "Начать"/"Ответить"
+        /// Инициирует проверку ударения по ответу в AccentAns
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Answer_Click(object sender, EventArgs e)
         {
             Answer.Text = "Ответить";
@@ -161,131 +175,46 @@ namespace Accent
             }
         }
 
-        public   string MaxID()
+        /// <summary>
+        /// Кнопка "Показать ответ"
+        /// Показывает правильный ответ
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AnsShow_Click(object sender, EventArgs e)
         {
-            XmlDocument doc = new XmlDocument();
-            doc.Load(myDirectory + @"\Slova.xml");
-            int p = 0;
-
-            foreach (XmlNode node in doc.DocumentElement)
-            {
-                int id = int.Parse(node["id"].InnerText);
-                
-                if (id > p)
-                {
-                    p = id;
-                }
-            }
-
-            return Convert.ToString(p);
+            AnsText.Text = "Правильный ответ: " + accent;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void NeWord_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Кнопка "Открыть список слов"
+        /// Открывает окно с выводом xml слов
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ShowWordList_Click(object sender, EventArgs e)
         {
             List list = new List();
             list.ShowDialog();
         }
 
-        private void AccentAns_ValueChanged(object sender, EventArgs e)
+        /// <summary>
+        /// Кнопка "Закончить тренировку"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void EndTraining_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            AnsText.Text = "Правильный ответ: " +accent;
-        }
-
-        public void Choise()
-        {
-            Random r = new Random();
-            int n = r.Next(1, Convert.ToInt16(MaxID()));
-
-            XmlDocument doc = new XmlDocument();
-            doc.Load(myDirectory + @"\Slova.xml");
-
-            foreach (XmlNode node in doc.DocumentElement)
-            {
-                int id = int.Parse(node["id"].InnerText);
-                word = node["word"].InnerText;
-                accent = int.Parse(node["accent"].InnerText);
-
-                if (id == n)
-                {
-                     
-                     QWord.Text = word;
-                        string word1=word;
-                      string alfavit = "ауеоыиэюя";
-                      foreach (var i in alfavit)
-                      {
-                          word1 = word1.Replace(i, '?');
-                      }
-
-                      string negative = "бвгджзйклмнпрстфхцчшщъь";
-                      foreach (var i in negative)
-                      {
-                          word1 = word1.Replace(i,'_');
-
-                      }
-                     
-                    char l = '1';
-                    char[] ar = word1.ToCharArray();
-                    for (int i = 0; i < ar.Length; i++)
-                    {
-                        if(ar[i] == '?')
-                        {
-                            ar[i] = l;
-                            l++;
-                            ;
-                        } 
-                    }
-                    string word2 = new string(ar);
-                    label6.Text = word2;
-                   
-                    return;
-                }
-            }
-        }
-
-        private void Button4_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Кнопка "Зарегистрироваться"
+        /// Открывает окно для ввода личных данных
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Registration_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
             form2.ShowDialog();
@@ -297,22 +226,23 @@ namespace Accent
             this.ID = form2.idnow;
         }
 
-        private void Label4_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Кнопка "Показать статистику"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ShowStat_Click(object sender, EventArgs e)
         {
-            NewAccent.Clear();
+            Stats form3 = new Stats();
+            form3.ShowDialog();
         }
 
-        private void Label5_Click(object sender, EventArgs e)
-        {
-            NeWord.Clear();
-        }
-
-        private void Label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button6_Click(object sender, EventArgs e) //отвечает за очистку результатов
+        /// <summary>
+        /// Кнопка "Очистить результаты"
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Reset_Click(object sender, EventArgs e) //отвечает за очистку результатов
         {
             if (Prover == true)
             {
@@ -333,21 +263,95 @@ namespace Accent
                 Form3 form3 = new Form3();
                 form3.ShowDialog();
             }
-
-            
         }
+        #endregion Buttons
 
-        private void QWord_Click(object sender, EventArgs e)
+        public string MaxID()
         {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(myDirectory + @"\Slova.xml");
+            int p = 0;
 
+            foreach (XmlNode node in doc.DocumentElement)
+            {
+                int id = int.Parse(node["id"].InnerText);
+                
+                if (id > p)
+                {
+                    p = id;
+                }
+            }
+
+            return Convert.ToString(p);
         }
 
-        private void Button5_Click(object sender, EventArgs e)
+        public void Choise()
         {
-            Stats form3 = new Stats();
-            form3.ShowDialog();
+            Random r = new Random();
+            int n = r.Next(1, Convert.ToInt16(MaxID()));
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load(myDirectory + @"\Slova.xml");
+
+            foreach (XmlNode node in doc.DocumentElement)
+            {
+                int id = int.Parse(node["id"].InnerText);
+                word = node["word"].InnerText;
+                accent = int.Parse(node["accent"].InnerText);
+
+                if (id == n)
+                {
+
+                    QWord.Text = word;
+                    string word1 = word;
+                    string alfavit = "ауеоыиэюя";
+                    foreach (var i in alfavit)
+                    {
+                        word1 = word1.Replace(i, '?');
+                    }
+
+                    string negative = "бвгджзйклмнпрстфхцчшщъь";
+                    foreach (var i in negative)
+                    {
+                        word1 = word1.Replace(i, '_');
+
+                    }
+
+                    char l = '1';
+                    char[] ar = word1.ToCharArray();
+                    for (int i = 0; i < ar.Length; i++)
+                    {
+                        if (ar[i] == '?')
+                        {
+                            ar[i] = l;
+                            l++;
+                            ;
+                        }
+                    }
+                    string word2 = new string(ar);
+                    label6.Text = word2;
+
+                    return;
+                }
+            }
         }
 
-        
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+            NewAccent.Clear();
+        }
+
+        private void Label5_Click(object sender, EventArgs e)
+        {
+            NewWord.Clear();
+        }
     }
 }
