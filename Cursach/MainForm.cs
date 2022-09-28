@@ -102,7 +102,7 @@ namespace Accent
             MyDoc = new XmlDocument();
             MyDoc.InnerXml = Dictionary.GetXml();
             XmlDeclaration xmldeclaration =
-            MyDoc.CreateXmlDeclaration("1.0", "windows-1251", "yes");
+            MyDoc.CreateXmlDeclaration("1.0", "UTF-8", "yes");
             MyDoc.InsertBefore(xmldeclaration, MyDoc.DocumentElement);
             MyDoc.Save(myDirectory + @"\Slova.xml");
             Dictionary = new DataSet();

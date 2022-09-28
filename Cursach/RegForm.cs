@@ -80,7 +80,7 @@ namespace Accent
                 MyDoc = new XmlDocument();
                 MyDoc.InnerXml = Profiles.GetXml();
                 XmlDeclaration xmldeclaration =
-                MyDoc.CreateXmlDeclaration("1.0", "windows-1251", "yes");
+                MyDoc.CreateXmlDeclaration("1.0", "UTF-8", "yes");
                 MyDoc.InsertBefore(xmldeclaration, MyDoc.DocumentElement);
                 MyDoc.Save(myDirectory + @"\profiles.xml");
                 Profiles = new DataSet();
